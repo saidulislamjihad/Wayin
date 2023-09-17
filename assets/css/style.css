@@ -295,9 +295,9 @@ main{
 }
 
     /*fixed header*/
-.fixed-header .header-bottom-wrap {
+.fixed-header .header-top-wrap {
     position: fixed;
-    background: #294e83;
+    background: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
     top: 0;
@@ -315,81 +315,175 @@ main{
 }
 /*Header css End*/
 
-
-/*Project section css start*/
-.project-section {
-    padding: 40px 0;
+/*Home section css start*/
+.home-section {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
 }
 
-.project-item-wrap {
-    background: #fff;
-    display: block;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5px;
+.search-content-wrap {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 
-.project-item-content {
-    padding: 15px;
+.home-section:after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.search-content-title {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.search-content-text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.search-item-wrap {
+    display: flex;
     margin-bottom: 20px;
 }
 
-.project-item-title {
+.search-item-wrap input {
+    height: 50px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #14c7f5;
+    margin-right: 10px;
+}
+
+.search-form-btn {
+    background: #14c7f5;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #14c7f5;
+    border-radius: 3px;
     font-size: 18px;
     font-weight: 600;
-    color: #000;
-    margin-bottom: 5px;
+    transition: all .5s ease;
 }
 
-.project-item-light-text {
-    background: red;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #fff;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.search-form-btn:hover {
+    background: transparent;
+    color: #14c7f5;
 }
 
-.project-item-text {
-    font-size: 14px;
-    font-weight: 400;
-    color: #555;
-    line-height: 22px;
+.search-item-wrap input:focus {
+    box-shadow: none;
+    border: 1px solid #14c7f5;
 }
 
-.progress-bar-top {
+.search-redio-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 5px 0;
+    justify-content: center;
 }
 
-.progress-bar-top span {
-    font-size: 13px;
-    color: #555;
+.search-redio-item-outer:first-child {
+    margin-right: 30px;
 }
 
-.progress-bar-outer .progress {
-    height: 7px;
-}
-
-.project-item-content-bottom-btn {
-    display: inline-block;
-    font-size: 16px;
+.search-redio-item-outer label {
+    color: #fff;
+    font-size: 19px;
     font-weight: 500;
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: #000;
-    transition: all .3s ease;
 }
 
-.project-item-content-bottom-btn:hover {
-    background: #000;
+.search-redio-item-outer input {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.search-redio-item-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Home section css End*/
+
+/*Pricing section css start*/
+.pricing-item-wrapper {
+    border: 1px solid #dadddd;
+    border-radius: 5px;
+    padding: 25px;
+}
+.pricing-item-wrapper .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+.pricing-item-wrapper .text {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 40px;
+}
+.pricing-item-wrapper .price {
+    font-size: 70px;
+    font-weight: 700;
+    color: #000;
+}
+.pricing-item-wrapper .pricing-label {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.pricing-item-wrapper .product-feature {
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.pricing-item-wrapper .product-feature li {
+    border-bottom: 1px solid #f2f3f3;
+    padding: 15px 0px;
+    font-size: 15px;
+    color: #000;
+}
+.pricing-item-wrapper .product-feature li i {
+    color: #d90110;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.plan-buy-btn {
+    text-align: center;
+    border: 2px solid #d90110;
+    display: block;
+    padding: 10px 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #d90110;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.pricing-item-wrapper:hover .plan-buy-btn {
+    background: #d90110;
     color: #fff;
 }
-/*Project section css End*/
+/*Pricing section css End*/
 
 /*Footer section css start*/
 .footer-section {
