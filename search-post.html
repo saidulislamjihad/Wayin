@@ -120,191 +120,95 @@
 								</div>
 								<button type="submit" class="search-location-search-btn">Search Again</button>
 							</div>
-							<div class="search-filter-wrapper">
-								<div class="search-filter-top-outer">
-									<h4 class="search-filter-top-title">
-										Filter
-									</h4>
-									<a href="#" class="search-filter-top-filter-reset">
-										Reset filters
-									</a>
-								</div>
-								<div class="rent-range">
-									<label>Rent</label><br>
-									<span>
-										<input class="rent-range__input" name="min_rent" id="minRent" placeholder="min" type="number" min="0" max="99999" size="5" step="1" style="min-width: 70px;">
-									</span>
-									<span class="rent-range__text">to</span>
-									<span>
-										<input class="rent-range__input" name="max_rent" id="maxRent" placeholder="max" type="number" min="0" max="99999" size="5" step="1" value="" style="min-width: 70px;">
-									</span>
-								</div>
-								<div class="week-month-rario-outer">
-									<div class="week-month__radio">
-										<input class="form-group__radio" type="radio" id="week" name="per" value="pw">
-										<label for="week">weekly</label>
-									</div>
-									<div class="week-month__radio">
-										<input class="form-group__radio" type="radio" id="month" name="per" value="pm" checked>
-										<label for="month">monthly</label>
-									</div>
-								</div>
-								<div class="rent-bill-included-outer">
-									<div class="rent-bill-included__checkbox">
-										<input type="checkbox" name="bills_inc" id="billsIncluded" value="Yes">
-										<label for="billsIncluded">Bills included in the rent</label>
-									</div>
-								</div>
-								<div class="move-filter__outer">
-								    <div class="move-in-title">
-								    	<span>To move in</span>
-								    </div>
-								    <div>
-								        <div class="move-filter__radio">
-								        	<input class="form-group__radio" data-testid="radioButton" type="radio" id="anytime" name="available_search" value="N" checked="" />
-								        	<label for="anytime">Anytime</label>
-								        </div>
-								        <div class="move-filter__radio">
-								            <input class="form-group__radio" type="radio"name="available_search" />
-								            <label for="selected_date">
-								                <input type="date" name="move_date">
-								            </label>
-								        </div>
-								    </div>
-								</div>
-								<div class="search-filter__section">
-								    <div class="form-group__title">
-								    	<span>Days available</span>
-								    </div>
-								    <div class="search-filter__radio-wrapper">
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="allPeriods" name="days_of_wk_available" value="" checked="" />
-								        	<label for="allPeriods">
-								        		All Periods
-								        	</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="wholeWeek" name="days_of_wk_available" value="7 days a week" />
-								        	<label for="wholeWeek">
-								        		7 days per week
-								        	</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="monToFri" name="days_of_wk_available" value="Mon to Fri only" />
-								        	<label for="monToFri">
-								        		Mon to Fri only
-								        	</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="weekendsOnly" name="days_of_wk_available" value="Weekends only" />
-								        	<label for="weekendsOnly">
-								        		Weekends only
-								        	</label>
-								        </div>
-								    </div>
-								</div>
-								<div class="search-filter__section">
-								    <div class="form-group__title">
-								    	<span>Property type</span>
-								    </div>
-								    <div class="form-group__checkbox">
-								    	<input type="checkbox" name="showme_rooms" id="roomsInShares" checked />
-								    	<label for="roomsInShares">
-								    		Rooms in existing shares
-								    	</label>
-								    </div>
-								    <div class="form-group__checkbox">
-								    	<input type="checkbox" name="showme_1beds" id="oneBedOrStudio" checked />
-								    	<label for="oneBedOrStudio" style="width: 190px; display: inline-flex;">
-								    		Studio / 1 bed flats
-								    	</label>
-								    </div>
-								    <div class="form-group__checkbox">
-								        <input type="checkbox" name="showme_buddyup_properties" id="wholeProperty" checked />
-								        <label for="wholeProperty" style="width: 190px; display: inline-flex;">
-									        Whole properties (suitable for sharing)
-									    </label>
-								    </div>
-								</div>
-								<div class="search-filter__section">
-								    <div class="form-group__title">
-								    	<span>Room amenities</span>
-								    </div>
-								    <div class="search-filter__radio-wrapper">
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="anyRoomSize" name="room_types" checked />
-								        	<label for="anyRoomSize">Any room size</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="doubleRoom" name="room_types" value="double" />
-								        	<label for="doubleRoom">Double room</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="singleRoom" name="room_types" value="single" />
-								        	<label for="singleRoom">Single room</label>
-								        </div>
-								    </div>
-								    <div class="search-filter__radio-wrapper">
-								        <hr class="search-filter__separator" />
-								        <div class="form-group__radio">
-								            <input class="form-group__radio" type="radio" id="furnishedUnfurnished" name="furnished" checked="" /><label for="furnishedUnfurnished">
-								            	Furnished or Unfurnished
-								            </label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="furnished" name="furnished" />
-								        	<label for="furnished">Furnished</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="unfurnished" name="furnished" />
-								        	<label for="unfurnished">Unfurnished</label>
-								        </div>
-								    </div>
-								</div>
-								<div class="search-filter__section">
-								    <div class="form-group__title">
-								    	<span>Rooms for</span>
-								    </div>
-								    <div class="search-filter__radio-wrapper">
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="anyGenderShare" name="rooms_for" value="" checked="" />
-								        	<label for="anyGenderShare">Don't Mind</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="femalesShare" name="rooms_for" value="females" />
-								        	<label for="femalesShare">Females</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="malesShare" name="rooms_for" value="males" />
-								        	<label for="malesShare">Males</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="couplesShare" name="rooms_for" value="couples" />
-								        	<label for="couplesShare">Couples</label>
-								        </div>
-								    </div>
-								</div>
-								<div class="search-filter__section">
-								    <div class="form-group__title">
-								    	<span>Share with</span>
-								    </div>
-								    <div class="search-filter__radio-wrapper">
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="anyOccupation" name="share_type" value="" checked />
-								        	<label for="anyOccupation">Any occupation</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="professionalShare" name="share_type" value="professionals" />
-								        	<label for="professionalShare">Professionals</label>
-								        </div>
-								        <div class="form-group__radio">
-								        	<input class="form-group__radio" type="radio" id="studentShare" name="share_type" value="student" />
-								        	<label for="studentShare">Student</label>
-								        </div>
-								  </div>
-								</div>
-							</div>
 						</form>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="post-items-wrapper">
+						<h2 class="post-items-title">							
+							Flatmates in Canada Water
+						</h2>
+						<div class="post-item-outer">
+							<a href="post-details.html" class="post-item-top">
+								<h3 class="post-item-title">
+									Professional Female seeks a single or double room
+								</h3>
+								<h3 class="post-item-price">
+									£1,400 
+								</h3>
+							</a>
+							<a href="post-details.html" class="post-item-content">
+								<div class="post-item-image">
+									<img src="assets/images/post.jpg" alt="image">
+								</div>
+								<p class="post-item-text">									
+									I am a professional female aged 24. I am looking for a single or double room. I am available to move from 15/09/2023 and have a budget of £1,400pcm
+								</p>
+							</a>
+							<div class="post-item-bottom">
+								<form action="" method="" class="save-post-form">
+									<i class="far fa-heart"></i>
+									<span>Save</span>
+								</form>
+								<a href="post-details.html" class="post-details-link">
+									More Info.
+								</a>
+							</div>
+						</div>
+						<div class="post-item-outer">
+							<a href="post-details.html" class="post-item-top">
+								<h3 class="post-item-title">
+									Professional Female seeks a single or double room
+								</h3>
+								<h3 class="post-item-price">
+									£1,400 
+								</h3>
+							</a>
+							<a href="post-details.html" class="post-item-content">
+								<div class="post-item-image">
+									<img src="assets/images/post1.jpg" alt="image">
+								</div>
+								<p class="post-item-text">									
+									I am a professional female aged 24. I am looking for a single or double room. I am available to move from 15/09/2023 and have a budget of £1,400pcm
+								</p>
+							</a>
+							<div class="post-item-bottom">
+								<form action="" method="" class="save-post-form">
+									<i class="far fa-heart"></i>
+									<span>Save</span>
+								</form>
+								<a href="post-details.html" class="post-details-link">
+									More Info.
+								</a>
+							</div>
+						</div>
+						<div class="post-item-outer">
+							<a href="post-details.html" class="post-item-top">
+								<h3 class="post-item-title">
+									Professional Female seeks a single or double room
+								</h3>
+								<h3 class="post-item-price">
+									£1,400 
+								</h3>
+							</a>
+							<a href="post-details.html" class="post-item-content">
+								<div class="post-item-image">
+									<img src="assets/images/post2.jpg" alt="image">
+								</div>
+								<p class="post-item-text">									
+									I am a professional female aged 24. I am looking for a single or double room. I am available to move from 15/09/2023 and have a budget of £1,400pcm
+								</p>
+							</a>
+							<div class="post-item-bottom">
+								<form action="" method="" class="save-post-form">
+									<i class="far fa-heart"></i>
+									<span>Save</span>
+								</form>
+								<a href="post-details.html" class="post-details-link">
+									More Info.
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -335,7 +239,7 @@
 					</h4>
 					<ul class="footer-list">
 						<li class="footer-list-item">
-							<a class="footer-list-item-link" href="about.html">
+							<a class="footer-list-item-link" href="#">
 								About Way In.
 							</a>
 						</li>
