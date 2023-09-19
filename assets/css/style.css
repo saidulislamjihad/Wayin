@@ -80,7 +80,7 @@ body {
     display: inline-block;
 }
 .brand-logo-outer .brand {
-    max-width: 150px;
+    max-width: 130px;
 }
 .header-section .navbar-brand {
   height: 100%;
@@ -641,8 +641,6 @@ body {
     color: #14c7f5;
 }
 
-.search-location-outer {}
-
 .search-location-outer label {font-size: 16px;font-weight: 500;margin-left: 5px;}
 
 .search-location-input {
@@ -902,3 +900,179 @@ body {
     color: #14c7f5;
 }
 /*Post details page css End*/
+
+/*About page css start*/
+.about-section {
+    padding: 20px 0;
+    background: var(--primary-color);
+}
+.about-sec-content-wrap {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.about-sec-content-wrap h1,
+.about-sec-content-wrap h2
+.about-sec-content-wrap h3
+.about-sec-content-wrap h4
+.about-sec-content-wrap h5
+.about-sec-content-wrap h6 {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.about-sec-content-wrap p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 26px;
+}
+.about-sec-content-wrap a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #294e83;
+}
+/*About page css End*/
+
+/*login section css start*/
+
+.login-section {
+    padding: 40px 0px;
+}
+
+.login-form {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 50px 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-custom h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #154360;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.login-custom input {
+    border: 1px solid #e7e7e7;
+    box-shadow: inherit;
+    height: 50px;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.login-custom button {
+    display: inline-block;
+    border: medium;
+    background: #14c7f5;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 50px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.login-custom button:focus {
+    outline: none;
+}
+
+.link-bottom {
+    margin-bottom: 0;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    float: left;
+    color: #666666;
+    font-weight: 400;
+}
+
+.link-bottom a {
+    color: #14c7f5;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.link-bottom a:hover {
+    color: #154360;
+}
+
+.lost-pass-link {
+    display: inline-block;
+    text-align: right;
+    color: #002147;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.lost-pass-link:hover {
+    color: #154360;
+}
+
+.forgot-password {
+    padding: 8px 16px;
+    word-spacing: 4px;
+}
+/*login section css End*/
+
+
+/*Registation section css start*/
+.registation-section {
+    padding: 40px 0;
+}
+#regForm {
+    background: #fff;
+    border-radius: 5px;
+    padding: 40px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#regForm h1 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #154360;
+}
+#regForm input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#regForm input:focus {
+    outline: none;
+}
+.registation-form-btn {
+    border: 1px solid #14c7f5;
+    background: #14c7f5;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 900;
+    padding: 8px 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.sign-up-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #14c7f5;
+    text-decoration: underline;
+}
+/*Registation section css End*/
